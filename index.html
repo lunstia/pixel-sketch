@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Sketch!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header><h1>Pixel Sketch</h1></header>
     <main>
-        <div class="settings"></div>
+        <div class="settings">
+            <div class="color-div"><input type="color" id="color" name="color"  value="#121212"></div>
+            <button id="hue-shift">Hue Shift</button>
+            <button id="clear">Clear</button>
+            <div class="slider-div">
+                <p>50 x 50</p>
+                <input type="range" id="slider" name="slider" min="1" max="100" value="50">
+            </div>
+        </div>
         <div class="gridContainer"></div>
     </main>
-    <footer><p>lunstia Copyright &copy; 2023</p></footer>
+    <footer><p>lunstia &copy; Copyright 2023</p></footer>
 </body>
 </html>
